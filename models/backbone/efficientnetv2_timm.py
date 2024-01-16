@@ -40,10 +40,10 @@ class ResNet50(nn.Module):
             #                                  out_indices=(1, 2, 3, 4), pretrained=False)
             # self.extract = timm.create_model('resnet50', features_only=True,
             #                                  out_indices=(1, 2, 3, 4), pretrained=False)
-            # self.extract = timm.create_model('resnet18', features_only=True,
-            #                                   out_indices=(1, 2, 3, 4), pretrained=True)
-            self.extract = timm.create_model('tf_efficientnet_b4', features_only=True,
+            self.extract = timm.create_model('resnet18', features_only=True,
                                               out_indices=(1, 2, 3, 4), pretrained=True)
+            # self.extract = timm.create_model('tf_efficientnet_b4', features_only=True,
+            #                                   out_indices=(1, 2, 3, 4), pretrained=True)
         else:
             raise Exception("Error, please check the backbone name!")
 

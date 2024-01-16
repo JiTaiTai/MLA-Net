@@ -10,7 +10,7 @@ from models.block.Field import PPM, ASPP4, SPP, ASPP3
 from models.block.PAM import PAM
 from models.block.CAM import CAM
 from models.block.BAM import BAM
-from models.block.Attention_Module import HFAB,TH,TH2,TH3,TH4
+from models.block.Attention_Module import TH,TH2
 from models.block.MSCAM import AFF,iAFF,absAFF,multiAFF
 from models.block.cbam import CBAM
 import os
